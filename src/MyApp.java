@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.HashMap;
 
+import static java.awt.Color.*;
+
 public class MyApp extends JFrame{
     JButton b1, b2;
     JLabel l1, l2;
