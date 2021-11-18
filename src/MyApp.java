@@ -2,7 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.HashMap;
 
-import static java.awt.Color.*;
 
 public class MyApp extends JFrame{
     JButton b1, b2;
@@ -14,6 +13,7 @@ public class MyApp extends JFrame{
 
 
     public MyApp() {
+
         setSize(1000, 500);
         setTitle("logowanie");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -22,9 +22,9 @@ public class MyApp extends JFrame{
         setLocationRelativeTo(null);
 
 
-        p = new JPanel();
+        p = new JPanel(null);
         p.setOpaque(true);
-        p.setBackground(Color.RED);
+        p.setBackground(Color.GRAY);
         add(p);
 
 
@@ -78,10 +78,16 @@ public class MyApp extends JFrame{
             if (login.equals(x)) {
                 String check = users.get(login);
                 if (check.equals(y)) {
+                    System.out.println("użytkownik istnieje");
                     p.setBackground(Color.GREEN);
                     return;
                 }
             }
+        System.out.println("użytkownik nie istnieje");
         p.setBackground(Color.RED);
+    }
+
+    static public void main(String[] args) {
+        EventQueue.invokeLater(MyApp::new);
     }
 }
