@@ -61,7 +61,8 @@ public class MyApp extends JFrame{
 
         users.put("BaRtO123","12345678");
         users.put("TheLegend27","7653212");
-        users.put("","");
+        users.put("Jan","Kowalski");
+        users.put("Andrzej","Nowak");
 
     }
 
