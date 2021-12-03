@@ -18,7 +18,6 @@ public class MyApp extends JFrame{
         setTitle("logowanie");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-        setLayout(null);
         setLocationRelativeTo(null);
 
 
@@ -29,34 +28,34 @@ public class MyApp extends JFrame{
 
 
         b1 = new JButton("login");
-        add(b1);
+        p.add(b1);
         b1.setBounds(380,300,100,50);
         b1.addActionListener(e -> lgn());
 
 
         b2 = new JButton("cancel");
-        add(b2);
+        p.add(b2);
         b2.setBounds(520,300,100,50);
         b2.addActionListener(e -> rst());
 
 
         l1 = new JLabel("       Login:");
-        add(l1);
+        p.add(l1);
         l1.setBounds(300,150,100,25);
 
 
         l2 = new JLabel("Password:");
-        add(l2);
+        p.add(l2);
         l2.setBounds(300,200,100,25);
 
 
         t = new JTextField("");
-        add(t);
+        p.add(t);
         t.setBounds(400, 150, 200, 25);
 
 
         pass = new JPasswordField("");
-        add(pass);
+        p.add(pass);
         pass.setBounds(400,200, 200, 25);
 
         users.put("BaRtO123","12345678");
