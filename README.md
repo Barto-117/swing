@@ -1,4 +1,4 @@
 # swing
 Podstawy swinga
 
-Poprawnie działający program.
+Poprawny program.
